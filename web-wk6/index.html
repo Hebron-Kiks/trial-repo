@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>My Interactive Demo Page</h1>
+    <p>A simple project with form validation and interactivity</p>
+  </header>
+
+  <!-- Form Section -->
+  <section id="form-section">
+    <h2>Sign Up</h2>
+    <form id="signupForm" novalidate>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" />
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Enter email" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" />
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- Interactive Section 1 -->
+  <section id="color-changer">
+    <h2>Background Color Changer</h2>
+    <p>Click the button to change the background to a random color.</p>
+    <button id="changeColorBtn">Change Color</button>
+  </section>
+
+  <!-- Interactive Section 2 -->
+  <section id="counter-section">
+    <h2>Click Counter</h2>
+    <p>You clicked <span id="counter">0</span> times.</p>
+    <button id="countBtn">Click Me</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Interactive Demo. All rights reserved.</p>
+  </footer>
+
+  <!-- Load JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
